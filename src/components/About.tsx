@@ -1,5 +1,5 @@
 import { Award, Heart, Users, Clock } from 'lucide-react';
-import aboutImage from '@/assets/geisiane-gym.jpg';
+const aboutImage = '/lovable-uploads/877fbe4c-6f3b-4708-a492-cbc6d2bfcd50.png';
 
 const About = () => {
   const highlights = [

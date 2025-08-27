@@ -16,7 +16,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       
-      <main>
+      <main className="pb-20 md:pb-0">
         <Hero />
         <ForWho />
         <Benefits />

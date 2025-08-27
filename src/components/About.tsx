@@ -22,17 +22,17 @@ const About = () => {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-background">
+    <section id="sobre" className="py-12 md:py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
             {/* Content */}
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
                 Conheça a Geisiane
               </h2>
               
-              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+              <div className="space-y-4 md:space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
                 <p>
                   <strong className="text-foreground">Geisiane Barbosa é Personal Trainer e mãe</strong>, especialista em treinos para mães no pós-parto. Ela entende na pele os desafios de conciliar maternidade com cuidado pessoal.
                 </p>
@@ -47,16 +47,16 @@ const About = () => {
               </div>
 
               {/* Highlights */}
-              <div className="grid sm:grid-cols-2 gap-4 mt-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mt-6 md:mt-8">
                 {highlights.map((highlight, index) => (
                   <div
                     key={index}
-                    className="flex items-center bg-secondary/50 rounded-xl p-4"
+                    className="flex items-center bg-secondary/50 rounded-lg md:rounded-xl p-3 md:p-4"
                   >
                     <div className="mr-3">
                       {highlight.icon}
                     </div>
-                    <span className="text-foreground font-medium">
+                    <span className="text-foreground font-medium text-sm md:text-base">
                       {highlight.text}
                     </span>
                   </div>
@@ -64,25 +64,25 @@ const About = () => {
               </div>
 
               {/* Credentials */}
-              <div className="mt-8 p-6 bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl border border-primary/10">
-                <h4 className="font-semibold text-foreground mb-3">
+              <div className="mt-6 md:mt-8 p-4 md:p-6 bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl md:rounded-2xl border border-primary/10">
+                <h4 className="font-semibold text-foreground mb-3 text-sm md:text-base">
                   Diferenciais da metodologia:
                 </h4>
-                <ul className="space-y-2 text-muted-foreground">
+                <ul className="space-y-2 text-muted-foreground text-sm md:text-base">
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-primary rounded-full mt-2 md:mt-3 mr-3 flex-shrink-0"></span>
                     Foco no fortalecimento do core pós-parto
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-primary rounded-full mt-2 md:mt-3 mr-3 flex-shrink-0"></span>
                     Respeito ao corpo e tempo de recuperação materno
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-primary rounded-full mt-2 md:mt-3 mr-3 flex-shrink-0"></span>
                     Flexibilidade para se adaptar à rotina de cada mãe
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-primary rounded-full mt-2 md:mt-3 mr-3 flex-shrink-0"></span>
                     Atendimento humanizado e empático
                   </li>
                 </ul>
@@ -95,9 +95,9 @@ const About = () => {
                 <img
                   src={aboutImage}
                   alt="Geisiane Barbosa, personal trainer, sorrindo"
-                  className="w-full rounded-3xl shadow-[var(--shadow-card)]"
+                  className="w-full rounded-2xl md:rounded-3xl shadow-[var(--shadow-card)]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl md:rounded-3xl"></div>
               </div>
             </div>
           </div>

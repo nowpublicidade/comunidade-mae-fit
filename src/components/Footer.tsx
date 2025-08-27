@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-foreground text-background py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {/* Brand */}
             <div className="lg:col-span-2">
               <h3 className="font-montserrat font-bold text-2xl mb-4">
@@ -63,37 +63,6 @@ const Footer = () => {
                 <li>
                   <a href="#faq" className="hover:text-primary transition-colors">
                     FAQ
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contato */}
-            <div>
-              <h4 className="font-semibold text-lg mb-4">Contato</h4>
-              <ul className="space-y-3 text-background/80">
-                <li>
-                  <a 
-                    href="https://wa.me/5511999999999" 
-                    className="flex items-center hover:text-primary transition-colors"
-                  >
-                    <MessageCircle className="w-4 h-4 mr-2" />
-                    WhatsApp
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Termos de Uso
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Política de Privacidade
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Cancelamento
                   </a>
                 </li>
               </ul>

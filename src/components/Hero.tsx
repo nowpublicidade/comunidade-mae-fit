@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowDown } from 'lucide-react';
-import heroImage from '@/assets/geisiane-family.jpg';
+const heroImage = '/lovable-uploads/c2e5161c-3c47-46e3-b13e-faf2f02432ef.png';
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -12,40 +12,41 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Gradient */}
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background Image with Custom Gradient */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Geisiane Barbosa, mãe e personal trainer, com seus dois filhos"
-          className="w-full h-full object-cover"
+          alt="Geisiane Barbosa, personal trainer na academia"
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 gradient-hero" />
+        {/* Custom gradient: solid magenta left to transparent right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-transparent" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center text-white">
+      {/* Content - Left aligned and vertically centered */}
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full min-h-screen flex items-center">
+        <div className="max-w-2xl text-white">
           {/* Price Badge */}
-          <Badge className="mb-6 bg-white/95 text-primary hover:bg-white text-lg px-4 py-2">
+          <Badge className="mb-8 bg-white/95 text-primary hover:bg-white text-base font-semibold px-6 py-3 animate-fade-in">
             R$ 9,99/mês
           </Badge>
 
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 leading-tight animate-fade-in">
             Conecte-se, treine e evolua com outras mães como você.
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl sm:text-2xl mb-8 opacity-95 max-w-3xl mx-auto animate-fade-in">
+          <p className="text-lg sm:text-xl lg:text-2xl mb-10 text-white/90 leading-relaxed max-w-xl animate-fade-in">
             Uma comunidade exclusiva no WhatsApp, com apoio diário, 1 treino novo por mês e 1 encontro on-line com a Geisiane.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in">
+          <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in">
             <Button 
               size="lg" 
-              className="btn-primary text-lg px-8 py-4 w-full sm:w-auto"
+              className="bg-primary hover:bg-primary/90 text-white font-semibold text-lg px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200"
             >
               Entrar na Comunidade
             </Button>
@@ -53,27 +54,29 @@ const Hero = () => {
               variant="outline"
               size="lg"
               onClick={() => scrollToSection('como-funciona')}
-              className="btn-secondary bg-white/10 border-white/30 text-white hover:bg-white hover:text-primary text-lg px-8 py-4 w-full sm:w-auto"
+              className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold text-lg px-10 py-4 rounded-full transition-all duration-200"
             >
               Ver como funciona
             </Button>
           </div>
 
           {/* Trust Indicators */}
-          <div className="flex items-center justify-center gap-3 text-white/90 animate-fade-in">
-            <div className="flex -space-x-2">
-              <div className="w-8 h-8 rounded-full bg-primary border-2 border-white" />
-              <div className="w-8 h-8 rounded-full bg-accent border-2 border-white" />
-              <div className="w-8 h-8 rounded-full bg-secondary border-2 border-white" />
+          <div className="flex items-center gap-4 text-white/80 animate-fade-in">
+            <div className="flex -space-x-3">
+              <div className="w-10 h-10 rounded-full bg-primary border-3 border-white shadow-md" />
+              <div className="w-10 h-10 rounded-full bg-accent border-3 border-white shadow-md" />
+              <div className="w-10 h-10 rounded-full bg-secondary border-3 border-white shadow-md" />
             </div>
-            <span className="text-sm sm:text-base">Mais de 40 mães satisfeitas</span>
+            <div className="text-base font-medium">
+              <span className="text-white font-bold">40+</span> mães satisfeitas
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="text-white/70" size={24} />
-        </div>
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <ArrowDown className="text-white/60" size={28} />
       </div>
     </section>
   );

@@ -27,11 +27,6 @@ const Hero = () => {
       {/* Content - Mobile: Full width centered, Desktop: Left aligned */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full min-h-screen flex items-center">
         <div className="w-full md:max-w-2xl text-white text-center md:text-left">
-          {/* Price Badge */}
-          <Badge className="mb-6 md:mb-8 bg-white/95 text-primary hover:bg-white text-sm md:text-base font-semibold px-4 py-2 md:px-6 md:py-3 animate-fade-in inline-block">
-            R$ 9,99/mês
-          </Badge>
-
           {/* Main Headline */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 md:mb-8 leading-tight animate-fade-in">
             Conecte-se, treine e evolua com outras mães como você.

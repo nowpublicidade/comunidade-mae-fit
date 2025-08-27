@@ -1,28 +1,29 @@
 import { MessageSquare, Play, Calendar, Users2 } from 'lucide-react';
+import { FeaturesSectionWithHoverEffects } from '@/components/ui/features-section-with-hover-effects';
 
 const HowItWorks = () => {
   const steps = [
     {
       number: "01",
-      icon: <MessageSquare className="w-8 h-8 text-primary" />,
+      icon: <MessageSquare className="w-8 h-8" />,
       title: "Entre no grupo",
       description: "Acesso direto via link do WhatsApp. É rápido e simples!"
     },
     {
-      number: "02",
-      icon: <Play className="w-8 h-8 text-primary" />,
+      number: "02", 
+      icon: <Play className="w-8 h-8" />,
       title: "Receba o treino do mês",
       description: "Todo início de mês, um novo treino exclusivo com vídeo e guia prático."
     },
     {
       number: "03",
-      icon: <Calendar className="w-8 h-8 text-primary" />,
-      title: "Participe da reunião on-line",
+      icon: <Calendar className="w-8 h-8" />,
+      title: "Participe da reunião on-line", 
       description: "Encontros mensais para tirar dúvidas e receber orientações personalizadas."
     },
     {
       number: "04",
-      icon: <Users2 className="w-8 h-8 text-primary" />,
+      icon: <Users2 className="w-8 h-8" />,
       title: "Compartilhe e evolua",
       description: "A comunidade apoia sua constância e celebra suas conquistas."
     }
@@ -41,30 +42,8 @@ const HowItWorks = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            {steps.map((step, index) => (
-              <div
-                key={index}
-                className="text-center group"
-              >
-                <div className="relative mb-6">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors duration-200">
-                    {step.icon}
-                  </div>
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold text-sm">
-                    {step.number}
-                  </div>
-                </div>
-                
-                <h3 className="text-lg font-semibold text-foreground mb-3">
-                  {step.title}
-                </h3>
-                
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {step.description}
-                </p>
-              </div>
-            ))}
+          <div className="mb-16">
+            <FeaturesSectionWithHoverEffects features={steps} />
           </div>
 
           {/* Callout */}

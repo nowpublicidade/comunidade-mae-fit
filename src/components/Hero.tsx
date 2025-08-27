@@ -46,17 +46,9 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in">
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-white font-semibold text-lg px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200"
+              className="bg-white hover:bg-white/90 text-primary font-semibold text-lg px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200"
             >
               Entrar na Comunidade
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={() => scrollToSection('como-funciona')}
-              className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold text-lg px-10 py-4 rounded-full transition-all duration-200"
-            >
-              Ver como funciona
             </Button>
           </div>
 

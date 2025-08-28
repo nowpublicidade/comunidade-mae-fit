@@ -33,7 +33,7 @@ const FAQ = () => {
     },
     {
       question: "E se eu tiver dúvidas sobre os exercícios?",
-      answer: "Você pode tirar suas dúvidas na comunidade a qualquer momento, e também nos encontros mensais ao vivo com a Geisiane. Sempre há alguém disponível para ajudar."
+      answer: "Você pode tirar suas dúvidas na comunidade a qualquer momento, e também nos encontros mensais ao vivo com a Geiciane. Sempre há alguém disponível para ajudar."
     },
     {
       question: "Como funciona o pagamento?",

@@ -29,12 +29,12 @@ const About = () => {
             {/* Content */}
             <div className="order-2 lg:order-1">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
-                Conheça a Geisiane
+                Conheça a Geiciane
               </h2>
               
               <div className="space-y-4 md:space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  <strong className="text-foreground">Geisiane Barbosa é Personal Trainer e mãe</strong>, especialista em treinos para mães no pós-parto. Ela entende na pele os desafios de conciliar maternidade com cuidado pessoal.
+                  <strong className="text-foreground">Geiciane Barbosa é Personal Trainer e mãe</strong>, especialista em treinos para mães no pós-parto. Ela entende na pele os desafios de conciliar maternidade com cuidado pessoal.
                 </p>
                 
                 <p>
@@ -94,7 +94,7 @@ const About = () => {
               <div className="relative">
                 <img
                   src={aboutImage}
-                  alt="Geisiane Barbosa, personal trainer, sorrindo"
+                  alt="Geiciane Barbosa, personal trainer, sorrindo"
                   className="w-full rounded-2xl md:rounded-3xl shadow-[var(--shadow-card)]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl md:rounded-3xl"></div>

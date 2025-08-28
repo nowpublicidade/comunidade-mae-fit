@@ -26,7 +26,7 @@ const Benefits = () => {
     },
     {
       icon: <Video className="w-12 h-12 text-primary" />,
-      title: "Encontro on-line com a Geisiane",
+      title: "Encontro on-line com a Geiciane",
       description: "Tira-dúvidas, correções de exercícios e incentivo direto da personal trainer.",
       features: [
         "Correção de postura",

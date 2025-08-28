@@ -16,7 +16,7 @@ const Testimonials = () => {
     },
     {
       name: "Ana Rodrigues",
-      text: "A Geisiane é incrível! Nas lives ela tira todas as dúvidas e sempre nos motiva a continuar.",
+      text: "A Geiciane é incrível! Nas lives ela tira todas as dúvidas e sempre nos motiva a continuar.",
       rating: 5,
       role: "Mãe de 1 filho"
     }

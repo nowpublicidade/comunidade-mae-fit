@@ -57,7 +57,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="#sobre" className="hover:text-primary transition-colors">
-                    Sobre a Geisiane
+                    Sobre a Geiciane
                   </a>
                 </li>
                 <li>
@@ -73,7 +73,7 @@ const Footer = () => {
           <div className="border-t border-background/20 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-background/60 text-sm mb-4 md:mb-0">
-                © 2024 Geisiane Barbosa - Mamãe Fit 360. Todos os direitos reservados.
+                © 2024 Geiciane Barbosa - Mamãe Fit 360. Todos os direitos reservados.
               </p>
               <div className="flex items-center text-background/60 text-sm">
                 <span>Feito com</span>

@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Geisiane Barbosa, personal trainer na academia"
+          alt="Geiciane Barbosa, personal trainer na academia"
           className="w-full h-full object-cover object-center md:object-center object-right"
         />
         {/* Mobile: Strong gradient for text readability, Desktop: Subtle gradient */}
@@ -34,7 +34,7 @@ const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 md:mb-10 text-white/90 leading-relaxed max-w-lg md:max-w-xl mx-auto md:mx-0 animate-fade-in">
-            Uma comunidade exclusiva no WhatsApp, com apoio diário, 1 treino novo por mês e 1 encontro on-line com a Geisiane.
+            Uma comunidade exclusiva no WhatsApp, com apoio diário, 1 treino novo por mês e 1 encontro on-line com a Geiciane.
           </p>
 
           {/* CTA Buttons */}

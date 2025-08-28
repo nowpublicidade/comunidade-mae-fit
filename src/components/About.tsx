@@ -1,4 +1,4 @@
-import { Award, Heart, Users, Clock } from 'lucide-react';
+import { Award, Heart, Users, Clock, Stethoscope } from 'lucide-react';
 const aboutImage = '/lovable-uploads/877fbe4c-6f3b-4708-a492-cbc6d2bfcd50.png';
 
 const About = () => {
@@ -18,6 +18,10 @@ const About = () => {
     {
       icon: <Clock className="w-6 h-6 text-primary" />,
       text: "5 anos de experiência"
+    },
+    {
+      icon: <Stethoscope className="w-6 h-6 text-primary" />,
+      text: "Especialista em diástase abdominal"
     }
   ];
 

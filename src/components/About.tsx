@@ -38,7 +38,7 @@ const About = () => {
               
               <div className="space-y-4 md:space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  <strong className="text-foreground">Geiciane Silva é Personal Trainer e mãe</strong>, especialista em treinos para mães no pós-parto. Ela entende na pele os desafios de conciliar maternidade com cuidado pessoal.
+                  <strong className="text-foreground">Geiciane Silva é Personal Trainer e mãe, especialista em treinos para mães no pós-parto e em diástase abdominal. Ela entende na pele os desafios de conciliar maternidade com cuidado pessoal.
                 </p>
                 
                 <p>
@@ -46,7 +46,7 @@ const About = () => {
                 </p>
                 
                 <p>
-                  <strong className="text-foreground">Sua metodologia própria</strong> foca em exercícios funcionais para o core, respeitando o corpo materno e oferecendo a flexibilidade que a rotina de uma mãe exige.
+                  <strong className="text-foreground">Sua metodologia própria</strong> foca em exercícios funcionais para o core, que ajudam a fortalecer o abdômen e fechar a diástase, sempre respeitando o corpo materno e oferecendo a flexibilidade que a rotina de uma mãe exige.
                 </p>
               </div>
 

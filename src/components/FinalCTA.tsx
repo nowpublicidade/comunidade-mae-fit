@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, Shield } from 'lucide-react';
+import { WHATSAPP_URL } from '@/lib/whatsapp';
 
 const FinalCTA = () => {
   return (
@@ -21,12 +22,19 @@ const FinalCTA = () => {
               Entre na comunidade por <span className="text-primary font-bold">R$ 9,99/mês</span> e comece ainda hoje sua jornada com outras mães.
             </p>
 
-            <Button 
-              size="lg" 
+            <Button asChild
+              size="lg"
               className="btn-primary text-xl px-12 py-6 mb-8 group"
             >
-              Entrar na Comunidade
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
+                Entrar na Comunidade
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
           </div>
 

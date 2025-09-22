@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { WHATSAPP_URL } from '@/lib/whatsapp';
 
 const FAQ = () => {
   const faqs = [
@@ -73,9 +74,14 @@ const FAQ = () => {
             <p className="text-muted-foreground mb-4">
               Ainda tem dúvidas? Fale conosco!
             </p>
-            <button className="text-primary font-medium hover:text-primary/80 transition-colors">
-              Entrar em contato via WhatsApp →
-            </button>
+<a
+  href={WHATSAPP_URL}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-primary font-medium hover:text-primary/80 transition-colors"
+>
+  Entrar em contato via WhatsApp →
+</a>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowDown } from 'lucide-react';
+import { WHATSAPP_URL } from '@/lib/whatsapp';
 const heroImage = '/lovable-uploads/c2e5161c-3c47-46e3-b13e-faf2f02432ef.png';
 
 const Hero = () => {
@@ -39,12 +40,14 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col gap-4 mb-8 md:mb-12 animate-fade-in">
-            <Button 
-              size="lg" 
-              className="bg-white hover:bg-white/90 text-primary font-semibold text-base md:text-lg px-8 md:px-10 py-3 md:py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 w-full md:w-auto"
-            >
-              Entrar na Comunidade
-            </Button>
+         <Button asChild
+          size="lg"
+          className="bg-white hover:bg-white/90 text-primary font-semibold text-base md:text-lg px-8 md:px-10 py-3 md:py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 w-full md:w-auto"
+          >
+         <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+         Entrar na Comunidade
+         </a>
+         </Button>
           </div>
 
           {/* Trust Indicators */}

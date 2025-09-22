@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Check, HelpCircle } from 'lucide-react';
+import { WHATSAPP_URL } from '@/lib/whatsapp';
 
 const Pricing = () => {
   const features = [
@@ -49,9 +50,11 @@ const Pricing = () => {
                   </p>
                 </div>
 
-                <Button className="btn-primary w-full text-lg py-4 mb-8">
+               <Button asChild className="btn-primary">
+                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                   Entrar na Comunidade
-                </Button>
+                </a>
+              </Button>
               </div>
 
               <div className="space-y-4 mb-8">

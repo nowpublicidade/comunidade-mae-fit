@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { WHATSAPP_URL } from '@/lib/whatsapp';
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -64,9 +66,11 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button className="btn-primary">
-              Entrar na Comunidade
-            </Button>
+        <Button asChild className="btn-primary">
+        <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+         Entrar na Comunidade
+       </a>
+       </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -117,9 +121,11 @@ const Header = () => {
             >
               FAQ
             </button>
-            <Button className="btn-primary w-full mt-4">
-              Entrar na Comunidade
-            </Button>
+          <Button asChild className="btn-primary">
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+          Entrar na Comunidade
+          </a>
+          </Button>
           </div>
         )}
       </div>
